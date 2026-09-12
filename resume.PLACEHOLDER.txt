@@ -1,0 +1,10 @@
+# Resume placeholder
+#
+# Place your actual resume PDF at:
+#   public/resume.pdf
+#
+# Then set RESUME_ENABLED = true in:
+#   src/config/site.ts
+#
+# This text file exists so the resume path is documented in Version 1.
+# Vercel / static hosting will serve /resume.pdf once the PDF is added.
