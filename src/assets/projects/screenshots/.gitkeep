@@ -1,0 +1,6 @@
+# Placeholder directories for future assets
+
+- `src/assets/profile/` — profile photo (optional)
+- `src/assets/projects/screenshots/` — project screenshots and diagrams
+
+Do not commit credentials, internal corporate materials, or unredacted lab configs.
