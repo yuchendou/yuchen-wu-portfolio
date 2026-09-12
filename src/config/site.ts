@@ -16,7 +16,7 @@ export const LINKEDIN_URL = ''
 export const EMAIL = ''
 
 /** Path to resume in /public. Keep in sync with the file you upload. */
-export const RESUME_URL = '/resume.pdf'
+export const RESUME_URL = `${import.meta.env.BASE_URL}resume.pdf`
 
 /**
  * Set to true once public/resume.pdf exists.

@@ -9,9 +9,11 @@ import { FarmLink } from './pages/projects/FarmLink'
 import { SecurityLab } from './pages/projects/SecurityLab'
 import { YulonSecurity } from './pages/projects/YulonSecurity'
 
+const routerBasename = import.meta.env.BASE_URL.replace(/\/$/, '') || '/'
+
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={routerBasename}>
       <ScrollToTop />
       <a className="skip-link" href="#main">
         Skip to main content

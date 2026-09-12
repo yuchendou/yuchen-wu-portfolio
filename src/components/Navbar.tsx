@@ -4,13 +4,15 @@ import { Link, useLocation } from 'react-router-dom'
 import { SITE } from '../config/site'
 import { ResumeButton } from './SocialLinks'
 
+const homeHash = (hash: string) => `${import.meta.env.BASE_URL}#${hash}`
+
 const navItems = [
-  { label: 'About', href: '/#about' },
-  { label: 'Experience', href: '/#experience' },
-  { label: 'Projects', href: '/#projects' },
-  { label: 'Skills', href: '/#skills' },
-  { label: 'Education', href: '/#education' },
-  { label: 'Contact', href: '/#contact' },
+  { label: 'About', href: homeHash('about') },
+  { label: 'Experience', href: homeHash('experience') },
+  { label: 'Projects', href: homeHash('projects') },
+  { label: 'Skills', href: homeHash('skills') },
+  { label: 'Education', href: homeHash('education') },
+  { label: 'Contact', href: homeHash('contact') },
 ] as const
 
 export function Navbar() {

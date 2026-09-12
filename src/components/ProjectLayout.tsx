@@ -14,7 +14,7 @@ export function ProjectLayout({ title, subtitle, context, tags, children }: Prop
   return (
     <main id="main" className="project-page fade-in">
       <div className="container project-page__inner">
-        <Link to="/#projects" className="project-page__back">
+        <Link to={{ pathname: '/', hash: 'projects' }} className="project-page__back">
           <ArrowLeft size={16} aria-hidden="true" />
           Back to Projects
         </Link>

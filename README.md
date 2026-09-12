@@ -45,12 +45,21 @@ Suggested placeholders to replace:
 - AI privacy research diagram
 - Optional Open Graph image (then add `og:image` in `index.html`)
 
+## Deploy to GitHub Pages
+
+This repo deploys automatically on every push to `main` via GitHub Actions.
+
+Live site: https://yuchendou.github.io/yuchen-wu-portfolio/
+
+In **Settings → Pages**, choose **GitHub Actions** as the source (not “Deploy from a branch”).
+
 ## Deploy to Vercel
 
 1. Push this repository to GitHub.
 2. Import the project in [Vercel](https://vercel.com).
 3. Framework preset: Vite (build `npm run build`, output `dist`).
-4. `vercel.json` already includes an SPA rewrite for client-side routes.
+4. If using a custom domain at the site root, set `base: '/'` in `vite.config.ts` (GitHub Pages needs `/yuchen-wu-portfolio/`).
+5. `vercel.json` already includes an SPA rewrite for client-side routes.
 
 ## Project structure
 
